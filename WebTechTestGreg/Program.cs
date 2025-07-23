@@ -1,5 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
 
+
+// Agregar el DbContext con la cadena de conexión desde appsettings.json
+//builder.Services.AddDbContext<TechnicalTestDbContext>(options =>
+  //  options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();
